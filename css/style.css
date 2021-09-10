@@ -1,0 +1,143 @@
+header{
+	padding: 2rem 0;
+}
+ header form {
+	float: right;
+}
+.bubble{
+	position: relative;
+	min-width: 65px;
+	padding:15px;
+	background: #fff;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+.bubble:after{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 15px 15px 0;
+	border-color: transparent white;
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-top: -15px;
+	left: -15px;
+	top: 50%;
+}
+.bubble:before{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 15px 15px 0;
+	border-color: transparent #ccc;
+	display: block;
+	width: 0;
+	z-index: 0;
+	margin-top: -15px;
+	left: -16px;
+	top: 50%;
+}
+
+.post-actions{
+	margin: 5px;
+}
+.comment-form .comment-group{
+	width: 80%;
+}
+.comment-form input[type='text']{
+	width: 89%;
+	margin-right: 5px;
+}
+.comment-avatar img{
+	width: 40px;
+	margin-right: 5px;
+}
+.comment{
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 3px;
+	margin:5px 0;
+	overflow: auto;
+	width: 100%;
+}
+.friends li {
+	text-decoration: none;
+	padding: 0 5px;
+	float: left;
+	display: inline;
+}
+.friends img{
+	width: 55px;
+}
+.groups img{
+	width: 80px;
+	float: left;
+	margin-right: 15px;
+}
+.group-items{
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	overflow: auto;
+}
+.members .members-row{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.members img{
+	margin-bottom: 5px;
+}
+.profile ul{
+	margin-top: 30px;
+}
+.profile li{
+	list-style: none;
+	line-height: 1.9em;
+}
+.photos{
+	padding: 0;
+	margin: 0;
+}
+.photos li{
+	list-style: none;
+	float: left;
+	margin:5px;
+	width: 23%;
+}
+.photos img{
+	width: 100%;
+	cursor: pointer;
+}
+footer .footer{
+	color:#581C87;
+	background: #f4f4f4;
+	height: 90px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 40px;
+	margin-top: 30px;
+	border-top: 7px solid #581C87;
+}
+@media(min-width: 991px){
+	.members p{
+		padding-top: 50px;
+	}
+}
+@media(max-width:600px){
+	.container{
+		padding: 0;
+	}
+	#signIn_button{
+		margin: 10px;
+	}
+	.form-inline{
+		margin: 10px;
+	}
+	#members-div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
